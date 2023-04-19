@@ -18,13 +18,13 @@ html{
     justify-content: space-around;
     align-items: center;
 }
-.navbar img{
+.logo_nombre img{
     height: 6rem;
     width: 6rem;
     border:none;
     border-radius: 8rem;
 }
-.navbar p{
+.logo_nombre p{
     display: inline;
     font-size: 2rem;
 }
@@ -147,4 +147,45 @@ footer{
     border-bottom: 0.1rem grey solid;
     color:grey;
     transition: 0.1s;
+}
+@media (max-width:390px){
+    .navbar{
+        height: 12rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo_nombre{
+        margin: 1rem 0;
+        width: 25rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navbar_links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar_links a{
+        margin: 1rem 0;
+    }
+    .navbar_links a:hover{
+        border-bottom: 0.1rem grey solid;
+        color:grey;
+        transition: 0.1s;
+    }
+    .contenedor{
+        flex-direction: column;
+        margin-top: 40rem;
+        height: 100vh;
+    }
+    .contenedor_card{
+        margin: 1rem;
+    }
+    footer{
+        margin-top: 90rem;
+        text-align: center;
+        font-size: 2rem;
+    }
 }
